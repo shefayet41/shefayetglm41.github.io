@@ -1,195 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      background: #f4f7f9;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #4CAF50, #2e7d32);
-      color: #fff;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-
-    nav {
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #4CAF50;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 2rem;
-      color: #2e7d32;
-    }
-
-    .about p {
-      text-align: center;
-      max-width: 700px;
-      margin: auto;
-      font-size: 1.1rem;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .project-card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-      transition: 0.3s;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-
-    .project-card h3 {
-      margin-bottom: 10px;
-      color: #333;
-    }
-
-    .project-card p {
-      font-size: 0.95rem;
-      margin-bottom: 15px;
-    }
-
-    .project-card a {
-      display: inline-block;
-      padding: 8px 15px;
-      background: #4CAF50;
-      color: #fff;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .project-card a:hover {
-      background: #2e7d32;
-    }
-
-    .contact {
-      text-align: center;
-    }
-
-    .contact p {
-      margin: 10px 0;
-      font-size: 1rem;
-    }
-
-    footer {
-      background: #2e7d32;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Hi, I'm [Shefayet Karim]</h1>
-    <p>GIS expert| Python Developer | Flutter developer</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-    "I am a passionate python developer who enjoys building modern, user-friendly websites and applications."
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>GIS & remote sensing</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>Flutter developer</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Project 3</h3>
-        <p>A short description of this project and the technology used.</p>
-        <a href="#">View Project</a>
-      </div>
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="projects">
+    <div class="project-card">
+      <img src="images/gis.jpg" alt="GIS & Remote Sensing">
+      <h3>GIS & Remote Sensing</h3>
+      <p>I work with GIS and Remote Sensing to analyze spatial data and extract meaningful insights about the Earth’s surface.</p>
+      <a href="#">View Project</a>
     </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="shefayetkarim.bafsc19@gmail.com">shefayetkarim.bafsc19@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/shefayet-karim-30672a285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">linkedin.com/in/shefayet karim</a></p>
-    <p>GitHub: <a href="https://github.com/shefayet41">github.com/shefayet41</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 [Shefayet Karim] | All Rights Reserved</p>
-  </footer>
-</body>
-</html>
+    <div class="project-card">
+      <img src="images/python.jpg" alt="Basic Python">
+      <h3>Basic Python</h3>
+      <p>This project demonstrates fundamental Python programming concepts such as variables, loops, and functions through simple problem-solving examples.</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="images/flutter.jpg" alt="Flutter Developing">
+      <h3>Flutter Developing</h3>
+      <p>This project focuses on developing cross-platform mobile applications using Flutter to build efficient, responsive, and user-friendly interfaces.</p>
+      <a href="#">View Project</a>
+    </div>
+  </div>
+</section>
